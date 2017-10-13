@@ -3,6 +3,7 @@ exports.up = function (knex, Promise) {
   return knex.schema.createTable('track', function (table) {
     table.increments();
     table.text('name');
+    table.integer('artist_id');
   });
 };
 
